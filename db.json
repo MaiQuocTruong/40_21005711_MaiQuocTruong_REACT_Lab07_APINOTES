@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1",
+      "name": "User 1"
+    },
+    {
+      "id": "cf6d",
+      "username": "truongmai123",
+      "password": "123",
+      "name": "Truong Mai"
+    },
+    {
+      "id": "78d6",
+      "username": "truong123",
+      "password": "123",
+      "name": "Truong 123"
+    }
+  ],
+  "notes": [
+    {
+      "id": "3",
+      "userId": "1",
+      "content": "Learn JavaScript basic",
+      "date": "2024-10-06"
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "content": "Learn HTML Advance",
+      "date": "2024-10-06"
+    },
+    {
+      "id": "5",
+      "userId": "1",
+      "content": "Medical App UI",
+      "date": "2024-10-06"
+    },
+    {
+      "id": "6",
+      "userId": "1",
+      "content": "Learn Java",
+      "date": "2024-10-06"
+    }
+  ]
+}
