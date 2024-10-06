@@ -1,7 +1,17 @@
-
-# ![Logo](./assets/image95.png) 40_21005711_MaiQuocTruong_REACT_Lab07_APINOTES
+# ![Logo](./assets/image95.png) <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
 
 > **Bài tập 7 React Lập Trình Thiết Bị Di Động**
+<h4>Sử dụng những cái sau đây:</h4>
+<p>
+  <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" />
+  <img alt="Expo" src="https://img.shields.io/badge/-Expo-1B1F1B?style=flat-square&logo=expo&logoColor=white" />
+  <img alt="MockAPI" src="https://img.shields.io/badge/-MockAPI-21B3D3?style=flat-square&logo=mockapi&logoColor=white" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual%20Studio%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
+  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
+  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
+</p>
 
 ---
 
