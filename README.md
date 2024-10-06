@@ -1,5 +1,5 @@
 
-# ![Logo](https://via.placeholder.com/150) 40_21005711_MaiQuocTruong_REACT_Lab07_APINOTES
+# ![Logo](./assets/image95.png) 40_21005711_MaiQuocTruong_REACT_Lab07_APINOTES
 
 > **Bài tập 7 React Lập Trình Thiết Bị Di Động**
 
