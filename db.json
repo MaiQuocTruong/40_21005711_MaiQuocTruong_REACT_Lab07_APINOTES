@@ -47,6 +47,18 @@
       "name": "Thiện Trọng",
       "username": "moonthien",
       "password": "123"
+    },
+    {
+      "id": "ea76",
+      "name": "Hieu Nhan",
+      "username": "hieunhan123",
+      "password": "123"
+    },
+    {
+      "id": "60fa",
+      "name": "Đại Lộc",
+      "username": "dailoc077",
+      "password": "123"
     }
   ],
   "notes": [
@@ -67,8 +79,8 @@
       "content": "Learn Java"
     },
     {
-      "id": "7cb1",
-      "content": "asdas"
+      "id": "ecf0",
+      "content": "aasdasd"
     }
   ]
 }

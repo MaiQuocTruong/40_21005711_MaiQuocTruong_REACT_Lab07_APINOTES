@@ -28,6 +28,17 @@ Trước khi bắt đầu, hãy đảm bảo rằng bạn đã cài đặt các 
   npm install -g json-server
   json-server --watch db.json --port 5000
 
+- **Sử dụng mockapi**: Vào web [mockapi.io](https://mockapi.io/):
+  ```bash 
+  Bước 1: Đăng nhập sử dụng mockap
+  Create new project
+  Đặt tên cho dự án: My Notes API
+  Nhấn: Create project
+
+  Bước 2: Tạo Resource
+  Bấm New resource
+  Set từng giá trị/values
+  
 - **Tạo file db.json**: Chạy các lệnh sau (phải cd vào project trước):
   ```bash 
   npm install axios
