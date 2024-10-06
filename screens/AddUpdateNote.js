@@ -4,13 +4,11 @@ import axios from 'axios';
 
 function AddUpdateNote() {
     const [content, setContent] = useState('');
-    const [date, setDate] = useState('');
 
     const handleSubmit = async () => {
-        await axios.post('http://localhost:5000/notes', { content, date });
-        Alert.alert('Thành công', 'Thêm ghi chú thành công');
+        await axios.post('http://localhost:5000/notes', { content });
+        alert('Thêm ghi chú thành công');
         setContent('');
-        setDate('');
     };
 
     return (
@@ -20,12 +18,6 @@ function AddUpdateNote() {
                 placeholder="Nội dung"
                 value={content}
                 onChangeText={setContent}
-                style={{ borderWidth: 1, marginBottom: 10 }}
-            />
-            <TextInput
-                placeholder="Ngày"
-                value={date}
-                onChangeText={setDate}
                 style={{ borderWidth: 1, marginBottom: 10 }}
             />
             <Button title="Thêm" onPress={handleSubmit} />

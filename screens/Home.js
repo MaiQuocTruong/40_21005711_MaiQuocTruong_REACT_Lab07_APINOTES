@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#00CFFF',
     paddingVertical: 15,
-    width: '80%', // Adjusting to use percentage instead of fixed pixel width
+    width: '190px', // Adjusting to use percentage instead of fixed pixel width
     borderRadius: 10,
     marginBottom: 20,
     alignItems: 'center', // Center content
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   loginButton: {
     backgroundColor: '#fff',
     paddingVertical: 15,
-    width: '80%', // Keeping the same width for consistency
+    width: '190px', // Keeping the same width for consistency
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ccc',

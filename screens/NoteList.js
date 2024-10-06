@@ -14,6 +14,13 @@ function NoteList() {
     // Lấy tên người dùng từ params (có thể từ Home hoặc RegisterLogin)
     const userName = route.params?.userName || 'Unknown User';
 
+    // Check for newNote in the route params and add it to the notes list
+    // useEffect(() => {
+    //     if (route.params?.newNote) {
+    //         setNotes(prevNotes => [...prevNotes, route.params.newNote]);
+    //     }
+    // }, [route.params?.newNote]);
+
     useEffect(() => {
         const fetchNotes = async () => {
             try {

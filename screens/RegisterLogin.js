@@ -19,12 +19,16 @@ const RegisterLogin = () => {
         // Truyền tên đầy đủ (name) của người dùng vào NoteList
         navigation.navigate('NoteList', { userName: user.name });
       } else {
-        Alert.alert('Lỗi', 'Tên người dùng hoặc mật khẩu không đúng');
+        alert('Lỗi: Tên người dùng hoặc mật khẩu không đúng');
       }
     } catch (error) {
       console.error(error);
-      Alert.alert('Lỗi', 'Không thể kết nối đến máy chủ');
+      alert('Lỗi', 'Không thể kết nối đến máy chủ');
     }
+  };
+
+  const navigateToSignUp = () => {
+    navigation.navigate('SignUp'); // Điều hướng đến màn hình đăng ký
   };
 
   return (
@@ -44,6 +48,11 @@ const RegisterLogin = () => {
         style={{ borderWidth: 1, marginBottom: 20, padding: 10 }}
       />
       <Button title="Đăng Nhập" onPress={handleLogin} />
+
+      {/* Nút đăng ký */}
+      <View style={{ marginTop: 20 }}>
+        <Button title="Đăng Ký" onPress={navigateToSignUp} />
+      </View>
     </View>
   );
 };
