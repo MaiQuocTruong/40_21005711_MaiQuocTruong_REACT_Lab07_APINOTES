@@ -14,7 +14,7 @@ function AddUpdateNote() {
 
     const handleSubmit = async () => {
         if (content.trim() === '') {
-            alert('Please enter some content for the note.');
+            Alert.alert('Please enter some content for the note.');
             return;
         }
     
@@ -26,7 +26,7 @@ function AddUpdateNote() {
             const newNote = { id: newNoteId, content };
             const result = await axios.post('http://localhost:5000/notes', newNote);
     
-            alert('Note added successfully');
+            Alert.alert('Note added successfully');
     
             navigation.navigate('NoteList', {
                 newNote: result.data, 
@@ -36,7 +36,7 @@ function AddUpdateNote() {
             setContent('');
         } catch (error) {
             console.error(error);
-            alert('Failed to add the note');
+            Alert.alert('Failed to add the note');
         }
     };
     

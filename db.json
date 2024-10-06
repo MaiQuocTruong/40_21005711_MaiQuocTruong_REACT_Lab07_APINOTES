@@ -32,8 +32,8 @@
     },
     {
       "id": "6",
-      "name": "Hai Nguyen",
-      "username": "hainguyen",
+      "name": "Mai Quốc Trưởng",
+      "username": "truong2403",
       "password": "123"
     }
   ],
@@ -56,11 +56,7 @@
     },
     {
       "id": "6",
-      "content": "Learn API"
-    },
-    {
-      "id": "7",
-      "content": "aaaaa"
+      "content": "Learn React"
     }
   ]
 }

@@ -80,11 +80,11 @@ function NoteList() {
                         note.id === noteToEdit.id ? updatedNote : note
                     )
                 );
-                alert('Cập nhật note thành công');
+                Alert.alert('Cập nhật note thành công');
                 setNoteToEdit(null);
             } catch (error) {
                 console.error(error);
-                alert('Failed to update the note.');
+                Alert.alert('Failed to update the note.');
             }
         }
         setEditModalVisible(false);

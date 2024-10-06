@@ -9,23 +9,23 @@ const SignUp = ({ navigation }) => {
 
   const validateInputs = () => {
     if (!name) {
-      alert('Lỗi: Tên đầy đủ không được để trống');
+      Alert.alert('Lỗi: Tên đầy đủ không được để trống');
       return false;
     }
     if (!username) {
-      alert('Lỗi: Tên người dùng không được để trống');
+      Alert.alert('Lỗi: Tên người dùng không được để trống');
       return false;
     }
     if (username.length < 3) {
-      alert('Lỗi: Tên người dùng phải có ít nhất 3 ký tự');
+      Alert.alert('Lỗi: Tên người dùng phải có ít nhất 3 ký tự');
       return false;
     }
     if (!password) {
-      alert('Lỗi: Mật khẩu không được để trống');
+      Alert.alert('Lỗi: Mật khẩu không được để trống');
       return false;
     }
     if (password.length < 3) {
-      alert('Lỗi: Mật khẩu phải có ít nhất 3 ký tự');
+      Alert.alert('Lỗi: Mật khẩu phải có ít nhất 3 ký tự');
       return false;
     }
     return true;
@@ -42,7 +42,7 @@ const SignUp = ({ navigation }) => {
       const userExists = response.data.some(u => u.username.toLowerCase() === username.toLowerCase());
 
       if (userExists) {
-        alert('Lỗi: Tên người dùng đã tồn tại');
+        Alert.alert('Lỗi: Tên người dùng đã tồn tại');
         return;
       }
 
@@ -51,11 +51,11 @@ const SignUp = ({ navigation }) => {
       const newUser = { id: newUserId, name, username, password };
       await axios.post('http://localhost:5000/users', newUser);
 
-      alert('Đăng ký thành công');
+      Alert.alert('Đăng ký thành công');
       navigation.navigate('RegisterLogin'); // Quay lại giao diện đăng nhập sau khi đăng ký
     } catch (error) {
       console.error(error);
-      alert('Lỗi: Không thể kết nối đến máy chủ');
+      Alert.alert('Lỗi: Không thể kết nối đến máy chủ');
     }
   };
 

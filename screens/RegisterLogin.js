@@ -25,11 +25,11 @@ const RegisterLogin = () => {
       if (user) {
         navigation.navigate('NoteList', { userName: user.name });
       } else {
-        alert('Lỗi: Tên người dùng hoặc mật khẩu không đúng');
+        Alert.alert('Lỗi: Tên người dùng hoặc mật khẩu không đúng');
       }
     } catch (error) {
       console.error(error);
-      alert('Lỗi: Không thể kết nối đến máy chủ');
+      Alert.alert('Lỗi: Không thể kết nối đến máy chủ');
     }
   };
 

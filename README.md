@@ -21,7 +21,7 @@
 
 Dự án **APINOTES** là một ứng dụng quản lý ghi chú trên thiết bị di động được xây dựng bằng **React Native** và **Expo**. Ứng dụng sử dụng **MockAPI** để quản lý dữ liệu và cung cấp giao diện người dùng thân thiện với thiết bị di động.
 
-![App Screenshot](https://via.placeholder.com/600x400)
+![App Screenshot](./assets/demo/bai7.gif)
 
 ---
 
@@ -31,7 +31,7 @@ Trước khi bắt đầu, hãy đảm bảo rằng bạn đã cài đặt các 
 
 - **Mobile Simulator**: Tải và cài đặt từ [Chrome Web Store](https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk).
   
-  ![Mobile Simulator](https://via.placeholder.com/300x200)
+  ![Mobile Simulator](https://lh3.googleusercontent.com/2j5aTV0zdY4-if24IerwQlyMyuzd4sEuWL116G5Aq3vhKT3FGX7FtQV7moRLS-P9qK23WhMVCxiHVH3CL1DJ8V04caQ=s1280-w1280-h800)
   
 - **Node.js**: Tải và cài đặt từ [nodejs.org](https://nodejs.org/).
 
@@ -86,7 +86,7 @@ npm install axios
 
 1. Truy cập [MockAPI.io](https://mockapi.io/).
 
-   ![MockAPI](https://via.placeholder.com/300x200)
+   ![MockAPI](./assets/mockapiio.png)
 
 2. **Bước 1: Đăng nhập và Tạo Dự Án Mới**
 
@@ -108,8 +108,6 @@ npm install axios
 npx expo start
 ```
 
-![Running App](https://via.placeholder.com/600x400)
-
 ---
 
 ## 🖥️ Hướng Dẫn Chạy Project Trên VSCode
@@ -119,8 +117,6 @@ npx expo start
    ```bash
    git clone <URL_REPOSITORY>
    ```
-
-   ![Git Clone](https://via.placeholder.com/300x200)
 
 2. **Mở Thư Mục Trong VSCode**
 
@@ -145,36 +141,28 @@ npx expo start
 
 ## 📧 Liên Hệ
 
-- **Email**: maiquoctruong@example.com
-- **LinkedIn**: [Mai Quốc Trường](https://www.linkedin.com/in/maiquoctruong/)
+- **Email**: maiqtruong2403@gmail.com or nguyennthanhtung0900@gmail.com
 - **GitHub**: [MaiQuocTruong](https://github.com/MaiQuocTruong)
 
 ---
 
 ## 🎨 Thiết Kế
 
-![Design](https://via.placeholder.com/600x400)
+![Design](./assets/demo/framework.png)
 
 ---
 
 **Cảm ơn bạn đã sử dụng dự án này!**
 
 ---
-
-### 🌟 Badge và Liên Kết Hữu Ích
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-Native-blue)
-![Expo](https://img.shields.io/badge/Expo-v48.0.0-blue)
+![TY](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2dtejc1bm1nNDJrdnU0ZW1zcTFkdzlpb3VrYWNoMXA3b2h4OThsbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/scZPhLqaVOM1qG4lT9/giphy.webp)
 
 ---
 
-## 💡 Mẹo Nâng Cao
+### 🌟
 
-- **Sử dụng GIF**: Bạn có thể thêm các GIF động để minh họa tính năng của ứng dụng.
+![React](https://img.shields.io/badge/React-Native-blue)
+![Expo](https://img.shields.io/badge/Expo-v51.0.0-blue)
 
-  ```markdown
-  ![Demo](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
-  ```
+---
 
-- **Thêm 3D Models**: Sử dụng các liên kết đến mô hình 3D hoặc nhúng chúng từ các dịch vụ hỗ trợ.

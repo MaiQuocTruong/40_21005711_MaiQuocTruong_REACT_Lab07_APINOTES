@@ -28,11 +28,11 @@ const Home = () => {
       
         navigation.navigate('NoteList', { userName: user.name });
       } else {
-        alert('Username không tồn tại trong hệ thống. Vui lòng nhập lại!');
+        Alert.alert('Username không tồn tại trong hệ thống. Vui lòng nhập lại!');
       }
     } catch (error) {
       console.error(error);
-      alert('Đã xảy ra lỗi khi kiểm tra username.');
+      Alert.alert('Đã xảy ra lỗi khi kiểm tra username.');
     }
   };
 
