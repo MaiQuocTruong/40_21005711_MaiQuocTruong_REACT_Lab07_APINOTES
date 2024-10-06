@@ -7,80 +7,60 @@
       "name": "User 1"
     },
     {
-      "id": "cf6d",
+      "id": "2",
       "username": "truongmai123",
       "password": "123",
       "name": "Truong Mai"
     },
     {
-      "id": "78d6",
-      "username": "truong123",
-      "password": "123",
-      "name": "Truong 123"
-    },
-    {
-      "id": "04is6fpde",
-      "username": "abc",
-      "password": "123",
-      "name": "abc"
-    },
-    {
-      "id": "i9sulylrt",
-      "username": "truongochos",
-      "password": "123",
-      "name": "truongochos"
-    },
-    {
-      "id": "1e4d",
-      "name": "Mai Quốc Trưởng",
-      "username": "truongmai",
+      "id": "3",
+      "name": "Truong Vip Pro",
+      "username": "truongpro",
       "password": "123"
     },
     {
-      "id": "2f05",
-      "name": "aaaa",
-      "username": "aaa123",
+      "id": "4",
+      "name": "Đại Lộc",
+      "username": "dailoc007",
       "password": "123"
     },
     {
-      "id": "146e",
-      "name": "Thiện Trọng",
+      "id": "5",
+      "name": "Thien Trong",
       "username": "moonthien",
       "password": "123"
     },
     {
-      "id": "ea76",
-      "name": "Hieu Nhan",
-      "username": "hieunhan123",
-      "password": "123"
-    },
-    {
-      "id": "60fa",
-      "name": "Đại Lộc",
-      "username": "dailoc077",
+      "id": "6",
+      "name": "Hai Nguyen",
+      "username": "hainguyen",
       "password": "123"
     }
   ],
   "notes": [
     {
-      "id": "3",
+      "id": "1",
       "content": "Learn JavaScript basic"
     },
     {
-      "id": "4",
+      "id": "2",
       "content": "Learn HTML Advance"
     },
     {
-      "id": "5",
+      "id": "3",
       "content": "Medical App UI"
     },
     {
-      "id": "6",
-      "content": "Learn Java"
+      "id": "5",
+      "content": "Learn JAVA"
     },
     {
-      "id": "ecf0",
-      "content": "aasdasd"
+      "id": "6",
+      "content": "Learn API"
+    },
+    {
+      "id": "7",
+      "content": "aaaaa"
     }
   ]
 }

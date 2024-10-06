@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import axios from 'axios'; // Import axios
-import FontAwesome from 'react-native-vector-icons/FontAwesome'; // Import FontAwesome for the user icon
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import axios from 'axios'; 
+import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
 
 const Home = () => {
   const [username, setUsername] = useState('');
   const [userNameFocused, setUserNameFocused] = useState(false);
 
   const navigation = useNavigation();
+
+  useFocusEffect(
+    useCallback(() => {
+      // Reset the username when the screen is focused
+      setUsername('');
+    }, [])
+  );
 
   const handleGetStarted = async () => {
     try {
@@ -18,7 +25,7 @@ const Home = () => {
       );
 
       if (user) {
-        // Pass the user's full name to NoteList
+      
         navigation.navigate('NoteList', { userName: user.name });
       } else {
         alert('Username không tồn tại trong hệ thống. Vui lòng nhập lại!');
@@ -37,7 +44,7 @@ const Home = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image
-          source={require('../assets/img95.svg')}
+          source={require('../assets/image95.png')}
           style={styles.image}
         />
       </View>
@@ -70,7 +77,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#fff',
   },
   header: {
     marginBottom: 30,
@@ -95,29 +102,29 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderWidth: 1,
     borderRadius: 10,
-    marginBottom: 50, // Increased margin to add more space
+    marginBottom: 50, 
   },
   inputContainerFocused: {
-    borderColor: '#6C63FF', // Change border color when input is not empty
+    borderColor: '#6C63FF', 
     borderWidth: 1,
   },
   icon: {
-    padding: 10, // Add some padding to the icon
-    color: '#6C63FF', // Icon color
+    padding: 10, 
+    color: '#6C63FF',
   },
   input: {
     height: 50,
-    flex: 1, // Allow the input to take up the remaining space
+    flex: 1, 
     paddingHorizontal: 10,
     outlineWidth: 0,
   },
   button: {
-    backgroundColor: '#00CFFF',
+    backgroundColor: '#00BDD6',
     paddingVertical: 15,
-    width: '190px', // Adjusting to use percentage instead of fixed pixel width
+    width: '190px', 
     borderRadius: 10,
     marginBottom: 20,
-    alignItems: 'center', // Center content
+    alignItems: 'center', 
   },
   buttonText: {
     color: '#fff',
@@ -127,11 +134,11 @@ const styles = StyleSheet.create({
   loginButton: {
     backgroundColor: '#fff',
     paddingVertical: 15,
-    width: '190px', // Keeping the same width for consistency
+    width: 190, 
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ccc',
-    alignItems: 'center', // Center content
+    alignItems: 'center', 
   },
   loginText: {
     color: '#808080',

@@ -12,11 +12,68 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="RegisterLogin" component={RegisterLogin} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="NoteList" component={NoteList} />
-        <Stack.Screen name="AddUpdateNote" component={AddUpdateNote} />
+
+        <Stack.Screen 
+            name="Home" 
+            component={Home} 
+            options={{ headerShown: false }} 
+        />
+
+        <Stack.Screen 
+            name="RegisterLogin" 
+            component={RegisterLogin} 
+            options={{ 
+            headerTitle: '',
+            headerBackTitleVisible: false, 
+            headerStyle: {
+              elevation: 0, 
+              shadowOpacity: 0, 
+              borderBottomWidth: 0, 
+            },
+            }}           
+        />
+
+        <Stack.Screen 
+            name="SignUp" 
+            component={SignUp} 
+            options={{ 
+            headerTitle: '',
+            headerBackTitleVisible: false, 
+            headerStyle: {
+              elevation: 0, 
+              shadowOpacity: 0, 
+              borderBottomWidth: 0, 
+            },
+            }}
+        />
+
+        <Stack.Screen 
+            name="NoteList" 
+            component={NoteList} 
+            options={{ 
+            headerTitle: '',
+            headerBackTitleVisible: false, 
+            headerStyle: {
+              elevation: 0, 
+              shadowOpacity: 0, 
+              borderBottomWidth: 0, 
+            },
+            }}
+        />
+
+        <Stack.Screen 
+            name="AddUpdateNote" 
+            component={AddUpdateNote} 
+            options={{ 
+            headerTitle: '',
+            headerBackTitleVisible: false, 
+            headerStyle: {
+              elevation: 0, 
+              shadowOpacity: 0, 
+              borderBottomWidth: 0, 
+            },
+            }}
+         />
       </Stack.Navigator>
     </NavigationContainer>
   );
