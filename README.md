@@ -1,4 +1,4 @@
-# ![Logo](./assets/image95.png) <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Hey! Nice to see you.</h1>
+# ![Logo](./assets/image95.png) <h1><img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> 40 - 21005711 - Mai Quốc Trưởng - APINOTES</h1>
 
 > **Bài tập 7 React Lập Trình Thiết Bị Di Động**
 <h4>Sử dụng những cái sau đây:</h4>
@@ -29,7 +29,7 @@
 
 ## 🎉 Giới Thiệu
 
-Dự án **APINOTES** là một ứng dụng quản lý ghi chú trên thiết bị di động được xây dựng bằng **React Native** và **Expo**. Ứng dụng sử dụng **MockAPI** để quản lý dữ liệu và cung cấp giao diện người dùng thân thiện với thiết bị di động.
+Dự án **APINOTES** là một ứng dụng quản lý ghi chú trên thiết bị di động được xây dựng bằng **React Native** và **Expo**. Ứng dụng sử dụng **MockAPI** và **Json server** để quản lý dữ liệu và cung cấp giao diện người dùng thân thiện với thiết bị di động.
 
 ![App Screenshot](./assets/demo/bai7.gif)
 
