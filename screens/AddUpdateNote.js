@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, Alert, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
-import { useRoute, useNavigation  } from '@react-navigation/native';
+import { useRoute, useNavigation } from '@react-navigation/native';
 
 function AddUpdateNote() {
     const [content, setContent] = useState('');
@@ -19,9 +19,8 @@ function AddUpdateNote() {
         }
     
         try {
-            // Lấy danh sách ghi chú từ db.json để tạo id mới
             const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/notes');
-            const newNoteId = response.data.length ? (parseInt(response.data[response.data.length - 1].id) + 1).toString() : "1"; // Tạo id mới
+            const newNoteId = response.data.length ? (parseInt(response.data[response.data.length - 1].id) + 1).toString() : "1";
             
             const newNote = { id: newNoteId, content };
             const result = await axios.post('https://6705d8bb031fd46a83111f3b.mockapi.io/notes', newNote);
@@ -39,7 +38,6 @@ function AddUpdateNote() {
             Alert.alert('Failed to add the note');
         }
     };
-    
 
     return (
         <ScrollView contentContainerStyle={styles.container}>
@@ -132,10 +130,10 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: '#00BDD6',
         paddingVertical: 15,
-        width: '190px', 
+        width: '100%',  // Changed to 100% for full width
         borderRadius: 10,
         marginBottom: 30,
-        alignItems: 'center', 
+        alignItems: 'center',
     },
     buttonText: {
         color: '#fff',

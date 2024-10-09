@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, Alert } from 'react-native'; // Added Alert import
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import axios from 'axios'; 
 import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
@@ -7,7 +7,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 const Home = () => {
   const [username, setUsername] = useState('');
   const [userNameFocused, setUserNameFocused] = useState(false);
-
   const navigation = useNavigation();
 
   useFocusEffect(
@@ -20,12 +19,9 @@ const Home = () => {
   const handleGetStarted = async () => {
     try {
       const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/users');
-      const user = response.data.find(
-        u => u.username.toLowerCase() === username.toLowerCase()
-      );
+      const user = response.data.find(u => u.username.toLowerCase() === username.toLowerCase());
 
       if (user) {
-      
         navigation.navigate('NoteList', { userName: user.name });
       } else {
         Alert.alert('Username không tồn tại trong hệ thống. Vui lòng nhập lại!');
@@ -50,7 +46,7 @@ const Home = () => {
       </View>
       <Text style={styles.title}>MANAGE YOUR TASK</Text>
       <View style={[styles.inputContainer, username.length > 0, userNameFocused && styles.inputContainerFocused]}>
-        <FontAwesome name="user" size={20} style={styles.icon} /> {/* User icon */}
+        <FontAwesome name="user" size={20} style={styles.icon} />
         <TextInput
           style={styles.input}
           placeholder="Enter your username"
@@ -64,7 +60,6 @@ const Home = () => {
       <TouchableOpacity style={styles.button} onPress={handleGetStarted}>
         <Text style={styles.buttonText}>GET STARTED</Text>
       </TouchableOpacity>
-
       <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
         <Text style={styles.loginText}>Login</Text>
       </TouchableOpacity>
@@ -121,7 +116,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#00BDD6',
     paddingVertical: 15,
-    width: '190px', 
+    width: 190, 
     borderRadius: 10,
     marginBottom: 20,
     alignItems: 'center', 
