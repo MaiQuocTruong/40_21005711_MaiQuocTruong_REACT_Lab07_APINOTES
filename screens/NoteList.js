@@ -22,7 +22,7 @@ function NoteList() {
     useEffect(() => {
         const fetchNotes = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/notes');
+                const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/notes');
                 setNotes(response.data);
             } catch (error) {
                 console.error(error);
@@ -51,7 +51,7 @@ function NoteList() {
     const handleDelete = async () => {
         if (noteToDelete) {
             try {
-                await axios.delete(`http://localhost:5000/notes/${noteToDelete}`);
+                await axios.delete(`https://6705d8bb031fd46a83111f3b.mockapi.io/notes/${noteToDelete}`);
                 setNotes(prevNotes => prevNotes.filter(note => note.id !== noteToDelete));
                 setNoteToDelete(null);
             } catch (error) {
@@ -74,7 +74,7 @@ function NoteList() {
                 // Construct the updated note with id before content
                 const updatedNote = { id: noteToEdit.id, content: editedContent };
                 
-                await axios.put(`http://localhost:5000/notes/${noteToEdit.id}`, updatedNote);
+                await axios.put(`https://6705d8bb031fd46a83111f3b.mockapi.io/notes/${noteToEdit.id}`, updatedNote);
                 setNotes(prevNotes =>
                     prevNotes.map(note =>
                         note.id === noteToEdit.id ? updatedNote : note

@@ -20,11 +20,11 @@ function AddUpdateNote() {
     
         try {
             // Lấy danh sách ghi chú từ db.json để tạo id mới
-            const response = await axios.get('http://localhost:5000/notes');
+            const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/notes');
             const newNoteId = response.data.length ? (parseInt(response.data[response.data.length - 1].id) + 1).toString() : "1"; // Tạo id mới
             
             const newNote = { id: newNoteId, content };
-            const result = await axios.post('http://localhost:5000/notes', newNote);
+            const result = await axios.post('https://6705d8bb031fd46a83111f3b.mockapi.io/notes', newNote);
     
             Alert.alert('Note added successfully');
     
@@ -68,7 +68,7 @@ function AddUpdateNote() {
                 <Text style={styles.buttonText}>FINISH →</Text>
             </TouchableOpacity>
 
-            <Image source={require('../assets/img95.svg')} style={styles.bottomImage} />
+            <Image source={require('../assets/image95.png')} style={styles.bottomImage} />
         </ScrollView>
     );
 }

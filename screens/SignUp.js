@@ -38,7 +38,7 @@ const SignUp = ({ navigation }) => {
 
     try {
       // Lấy danh sách người dùng từ db.json để kiểm tra trùng lặp username
-      const response = await axios.get('http://localhost:5000/users');
+      const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/users');
       const userExists = response.data.some(u => u.username.toLowerCase() === username.toLowerCase());
 
       if (userExists) {
@@ -49,7 +49,7 @@ const SignUp = ({ navigation }) => {
       // Nếu username chưa tồn tại, tạo tài khoản mới
       const newUserId = response.data.length ? (parseInt(response.data[response.data.length - 1].id) + 1).toString() : "1"; // Tạo id mới
       const newUser = { id: newUserId, name, username, password };
-      await axios.post('http://localhost:5000/users', newUser);
+      await axios.post('https://6705d8bb031fd46a83111f3b.mockapi.io/users', newUser);
 
       Alert.alert('Đăng ký thành công');
       navigation.navigate('RegisterLogin'); // Quay lại giao diện đăng nhập sau khi đăng ký

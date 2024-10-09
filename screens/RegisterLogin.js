@@ -17,7 +17,7 @@ const RegisterLogin = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/users');
+      const response = await axios.get('https://6705d8bb031fd46a83111f3b.mockapi.io/users');
       const user = response.data.find(
         u => u.username.toLowerCase() === username.toLowerCase() && u.password === password
       );
